@@ -267,22 +267,27 @@ section.skills{
     gap: 20px;
 }
 
-.githubIcon a{
+.githubIcon div{
+    display: flex;
+    justify-content: center;
+}
+
+.githubIcon div a{
     font-size: 24px;
     display: flex;
     align-items: center;
     text-decoration: none;
-    gap: 15px;
+    
 }
-.githubIcon span:hover{
+.githubIcon div span:hover{
     color: white;
 }
 
-.githubIcon img{
+.githubIcon div img{
     width: 70px;
 }
 
-.githubIcon img:hover{
+.githubIcon div img:hover{
     transform: scale(1.2);
 }
 
