@@ -274,9 +274,6 @@ section.skills{
     text-decoration: none;
     gap: 15px;
 }
-.githubIcon span{
-    justify-content: center;
-}
 .githubIcon span:hover{
     color: white;
 }
