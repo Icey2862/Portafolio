@@ -1,30 +1,31 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-span{
+
+span {
     color: red;
 }
 
-body{
+body {
     font: 18px;
-    font-family: 'Signika', sans-serif;
+    font-family: "Signika", sans-serif;
 }
-.navDiv{
+
+.navDiv {
     display: flex;
     justify-content: flex-end;
     position: relative;
     padding-top: 15px;
 }
 
-.navDiv ul{
+.navDiv ul {
     display: flex;
     list-style-type: none;
-
 }
 
-.navDiv a{
+.navDiv a {
     font-size: 24px;
     padding: 10px;
     margin: 20px;
@@ -32,41 +33,41 @@ body{
     color: white;
 }
 
-.navDiv a:hover{
+.navDiv a:hover {
     border-bottom: red solid;
 }
 
-.menuDiv{
+.menuDiv {
     background-color: black;
 }
 
-.menuDiv img{
+.menuDiv img {
     width: 100%;
     height: 500px;
     opacity: 0.35;
 }
 
 /* Profile circle */
-
-.profile div{
-    position: absolute;
-}
-
-.profile{
+.profile {
     display: flex;
     justify-content: center;
 }
 
-.square{
+.profile div {
+    position: absolute;
+}
+
+.square {
     height: 450px;
     width: 320px;
     background-color: rgb(73, 72, 72);
-    opacity: 0.7;
+    opacity: 0.5;
     z-index: 10;
+    border-radius: 5px;
     top: 70px;
 }
 
-.circle-trans{
+.circle-trans {
     height: 290px;
     width: 290px;
     border-radius: 50%;
@@ -75,7 +76,8 @@ body{
     opacity: 0.2;
     top: 90px;
 }
-.circle{
+
+.circle {
     width: 230px;
     height: 230px;
     border-radius: 50%;
@@ -84,99 +86,96 @@ body{
     top: 120px;
 }
 
-.profileImg{
+.profileImg {
     top: 134px;
     z-index: 20;
 }
 
-.profileImg img{
+.profileImg img {
     width: 202px;
     height: 202px;
     border-radius: 50%;
-
 }
 
-.squareText{
+.squareText {
     font-size: 30px;
     color: white;
     top: 380px;
     z-index: 20;
 }
 
-.squareText2{
+.squareText2 {
     font-size: 26px;
     top: 410px;
     z-index: 20;
 }
 
-.squareText3{
+.squareText3 {
     font-size: 20px;
     top: 480px;
     z-index: 20;
 }
 
-.squareText3:hover{
+.squareText3 .squareText3:hover {
     border-bottom: red solid;
 }
 
-.squareText3 a{
+.squareText3 a {
     color: white;
     text-decoration: none;
 }
 
-.contactIcons{
+.contactIcons {
     top: 440px;
     z-index: 20;
 }
 
-.contactIcons img{
+.contactIcons img {
     width: 40px;
     margin: 0 10px;
 }
 
-.contactIcons img:hover{
+.contactIcons img:hover {
     transform: scale(1.2);
 }
 
 /* Portafolio */
-
-.briefcase{
+.briefcase {
     background-color: rgb(39, 39, 39);
 }
 
-.briefcaseSection h2{
+.briefcase h2 {
     color: white;
     padding: 40px;
     text-align: center;
 }
 
-.briefcaseGrid{
+.briefcaseGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(290px,auto));
+    grid-template-columns: repeat(auto-fit, minmax(290px, auto));
     gap: 170px;
     width: 90%;
     margin: 0 auto;
 }
 
-.briefcaseGrid img{
+.briefcaseGrid img {
     width: 100%;
     border-radius: 10px;
     transition: transform 0.2 ease;
 }
 
-.briefcaseGrid img:hover{
+.briefcaseGrid img:hover {
     transform: scale(1.1);
 }
 
 /* Habilidades */
-
-section.skills{
+section.skills {
     background-color: rgb(39, 39, 39);
 }
 
-.skill{
+.skill {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,auto));
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
     justify-content: center;
     gap: 170px;
     width: 90%;
@@ -184,12 +183,13 @@ section.skills{
     padding-bottom: 110px;
 }
 
-.skill h2{
+.skill h2 {
     color: white;
     padding-bottom: 60px;
     padding-top: 60px;
 }
-.skill h3{
+
+.skill h3 {
     background-color: black;
     text-align: center;
     border-radius: 5px;
@@ -197,49 +197,42 @@ section.skills{
     font-size: 18px;
     width: 100px;
     opacity: 0;
-    transform: translate(0,-100px);
+    transform: translate(0, -100px);
     transition: transform 0.4s ease, opacity 0.4s ease;
     color: red;
 }
 
-.conocimientos>div:hover h3,
-.herramientas>div:hover h3{
-    opacity: 1;
-    transform: translate(0,-130px);
-}
-.skill img{
+.skill img {
     width: 80px;
     height: auto;
 }
 
-.conocimientos{
+.conocimientos>div:hover h3,
+.herramientas>div:hover h3 {
+    opacity: 1;
+    transform: translate(0, -130px);
+}
+
+.conocimientos {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(110px,auto));
+    grid-template-columns: repeat(auto-fit, minmax(110px, auto));
     justify-content: center;
     gap: 25px;
 }
 
-.herramientas{
+.herramientas {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(70px,auto));
+    grid-template-columns: repeat(auto-fit, minmax(70px, auto));
     justify-content: center;
     gap: 50px;
 }
 
 /* ABOUT */
-
-.aboutMe{
+.aboutMe {
     background-color: black;
 }
 
-.aboutFlex{
-    display: flex;
-    width: 90%;
-    margin: 0 auto;
-    padding: 50px 0 100px;
-}
-
-.aboutMe p{
+.aboutMe p {
     width: 90%;
     margin: 0 auto;
     line-height: 30px;
@@ -247,53 +240,62 @@ section.skills{
     color: white;
 }
 
-.social{
+.aboutFlex {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    padding: 50px 0 100px;
+}
+
+.social {
     border-left: white solid;
     padding-left: 50px;
 }
 
-.social img{
+.social img {
     width: 60px;
     margin: 10px;
 }
 
-.social img:hover{
+.social img:hover {
     transform: scale(1.2);
 }
 
-.githubIcon{
+.githubIcon {
     display: flex;
     justify-content: center;
     gap: 20px;
 }
 
-.githubIcon div{
+.githubIcon div {
     display: flex;
     justify-content: center;
 }
 
-.githubIcon div a{
+.githubIcon div a {
     font-size: 24px;
     display: flex;
     align-items: center;
     text-decoration: none;
-    
 }
-.githubIcon div span:hover{
+
+.githubIcon div span:hover {
     color: white;
 }
 
-.githubIcon div img{
+.githubIcon div img {
     width: 70px;
 }
 
-.githubIcon div img:hover{
+.githubIcon div img:hover {
     transform: scale(1.2);
 }
 
-footer{
+footer {
     background-color: black;
     text-align: center;
     color: white;
     padding-top: 100px;
 }
+
+/*# sourceMappingURL=styles.css.map */
